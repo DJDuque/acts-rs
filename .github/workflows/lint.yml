@@ -16,6 +16,10 @@ jobs:
       security-events: write
     steps:
     - uses: actions/checkout@v4
+      with:
+        submodules: true
+    - name: Install Boost
+      run: sudo apt-get update && sudo apt-get install -y libboost-all-dev
     - name: Install SARIF tools
       run: cargo install clippy-sarif sarif-fmt
     - name: Run clippy
