@@ -40,6 +40,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+      with:
+        submodules: true
+    - name: Install Boost
+      run: sudo apt-get update && sudo apt-get install -y libboost-all-dev
     - name: Check documentation
       run: RUSTDOCFLAGS="-D warnings" cargo doc
   committed:
