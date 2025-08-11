@@ -8,4 +8,9 @@ fn main() {
 
     println!("cargo:rustc-link-search=native={}/lib", dst.display());
     println!("cargo:rustc-link-lib=static=ActsCore");
+
+    cxx_build::bridge("src/definitions.rs")
+        .include(dst.join("include"))
+        .include(dst.join("include").join("eigen3"))
+        .compile("acts-sys");
 }
