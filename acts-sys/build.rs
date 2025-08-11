@@ -9,7 +9,7 @@ fn main() {
     println!("cargo:rustc-link-search=native={}/lib", dst.display());
     println!("cargo:rustc-link-lib=static=ActsCore");
 
-    let bridge_files = vec!["src/definitions/algebra.rs"];
+    let bridge_files = vec!["src/definitions/algebra.rs", "src/definitions/alignment.rs"];
     cxx_build::bridges(bridge_files)
         .include("./include")
         .include(dst.join("include"))
