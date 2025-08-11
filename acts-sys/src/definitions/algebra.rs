@@ -24,3 +24,14 @@ mod ffi {
         fn transform_equivalent_tolerance() -> f64;
     }
 }
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_transform_equivalent_tolerance() {
+        let tol = transform_equivalent_tolerance();
+        assert_eq!(tol, 1e-9);
+    }
+}
