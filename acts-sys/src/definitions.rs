@@ -1,5 +1,6 @@
-pub use ffi::*;
+pub mod algebra;
 
+/*
 #[cxx::bridge(namespace = "Acts")]
 mod ffi {
     #[repr(u32)]
@@ -89,27 +90,12 @@ mod ffi {
     }
 
     unsafe extern "C++" {
-        include!("Acts/Definitions/Algebra.hpp");
         include!("Acts/Definitions/Alignment.hpp");
         include!("Acts/Definitions/Common.hpp");
         include!("Acts/Definitions/Direction.hpp");
         include!("Acts/Definitions/ParticleData.hpp");
         include!("Acts/Definitions/PdgParticle.hpp");
         include!("Acts/Definitions/TrackParametrization.hpp");
-
-        type Vector2;
-        type Vector3;
-        type Vector4;
-        type SquareMatrix2;
-        type SquareMatrix3;
-        type SquareMatrix4;
-        type Translation2;
-        type Translation3;
-        type RotationMatrix2;
-        type RotationMatrix3;
-        type AngleAxis3;
-        type Transform2;
-        type Transform3;
 
         type AlignmentIndices;
         type AlignmentVector;
@@ -142,3 +128,4 @@ mod ffi {
         type FreeToPathMatrix;
     }
 }
+*/
