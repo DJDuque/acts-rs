@@ -13,6 +13,7 @@ fn main() {
         "src/definitions/direction.rs",
         "src/definitions/pdg_particle.rs",
         "src/definitions/particle_data.rs",
+        "src/definitions/tolerance.rs",
     ];
     cxx_build::bridges(bridge_files)
         .include("./include")
