@@ -6,6 +6,22 @@ fn main() {
         .define("ACTS_USE_SYSTEM_EIGEN3", "OFF")
         .build();
 
+    let bridge_files = vec![
+        "src/definitions/algebra.rs",
+        "src/definitions/alignment.rs",
+        "src/definitions/common.rs",
+        "src/definitions/direction.rs",
+        "src/definitions/pdg_particle.rs",
+        "src/definitions/particle_data.rs",
+        "src/definitions/tolerance.rs",
+        "src/definitions/track_parametrization.rs",
+    ];
+    cxx_build::bridges(bridge_files)
+        .include("./include")
+        .include(dst.join("include"))
+        .include(dst.join("include").join("eigen3"))
+        .compile("acts-sys");
+
     println!("cargo:rustc-link-search=native={}/lib", dst.display());
     println!("cargo:rustc-link-lib=static=ActsCore");
 }
