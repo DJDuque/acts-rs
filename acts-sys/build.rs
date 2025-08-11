@@ -14,6 +14,7 @@ fn main() {
         "src/definitions/alignment.rs",
         "src/definitions/common.rs",
         "src/definitions/direction.rs",
+        "src/definitions/pdg_particle.rs",
     ];
     cxx_build::bridges(bridge_files)
         .include("./include")
