@@ -1,37 +1,10 @@
 pub mod algebra;
 pub mod alignment;
+pub mod common;
 
 /*
 #[cxx::bridge(namespace = "Acts")]
 mod ffi {
-    #[repr(i32)]
-    enum MaterialUpdateStage {
-        PreUpdate = -1,
-        FullUpdate,
-        PostUpdate,
-    }
-
-    #[repr(i32)]
-    enum NoiseUpdateMode {
-        removeNoise = -1,
-        addNoise = 1,
-    }
-
-    #[repr(u32)]
-    enum CoordinateIndices {
-        ePos0 = 0,
-        ePos1,
-        ePos2,
-        eTime,
-        eMom0 = 0,
-        eMom1,
-        eMom2,
-        eEnergy,
-        eX = 0,
-        eY,
-        eZ,
-    }
-
     #[repr(i32)]
     enum PdgParticle {
         eInvalid,
@@ -80,15 +53,10 @@ mod ffi {
     }
 
     unsafe extern "C++" {
-        include!("Acts/Definitions/Common.hpp");
         include!("Acts/Definitions/Direction.hpp");
         include!("Acts/Definitions/ParticleData.hpp");
         include!("Acts/Definitions/PdgParticle.hpp");
         include!("Acts/Definitions/TrackParametrization.hpp");
-
-        type MaterialUpdateStage;
-        type NoiseUpdateMode;
-        type CoordinateIndices;
 
         type Direction;
 
