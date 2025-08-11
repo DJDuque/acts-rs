@@ -1,6 +1,7 @@
 pub mod algebra;
 pub mod alignment;
 pub mod common;
+pub mod direction;
 
 /*
 #[cxx::bridge(namespace = "Acts")]
@@ -53,12 +54,9 @@ mod ffi {
     }
 
     unsafe extern "C++" {
-        include!("Acts/Definitions/Direction.hpp");
         include!("Acts/Definitions/ParticleData.hpp");
         include!("Acts/Definitions/PdgParticle.hpp");
         include!("Acts/Definitions/TrackParametrization.hpp");
-
-        type Direction;
 
         type ParticleData;
 

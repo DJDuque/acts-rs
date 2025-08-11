@@ -13,6 +13,7 @@ fn main() {
         "src/definitions/algebra.rs",
         "src/definitions/alignment.rs",
         "src/definitions/common.rs",
+        "src/definitions/direction.rs",
     ];
     cxx_build::bridges(bridge_files)
         .include("./include")
