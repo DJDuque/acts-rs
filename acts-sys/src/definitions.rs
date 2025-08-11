@@ -2,6 +2,7 @@ pub mod algebra;
 pub mod alignment;
 pub mod common;
 pub mod direction;
+pub mod particle_data;
 pub mod pdg_particle;
 
 /*
@@ -32,10 +33,7 @@ mod ffi {
     }
 
     unsafe extern "C++" {
-        include!("Acts/Definitions/ParticleData.hpp");
         include!("Acts/Definitions/TrackParametrization.hpp");
-
-        type ParticleData;
 
         type BoundIndices;
         type FreeIndices;
