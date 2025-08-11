@@ -5,9 +5,9 @@
 namespace acts_sys {
 namespace ffi {
 
-	inline double transform_equivalent_tolerance() {
-		return Acts::s_transformEquivalentTolerance;
-	}
+inline double transform_equivalent_tolerance() {
+  return Acts::s_transformEquivalentTolerance;
+}
 
-}
-}
+} // namespace ffi
+} // namespace acts_sys
