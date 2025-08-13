@@ -5,9 +5,14 @@ mod ffi {
     unsafe extern "C++" {
         include!("acts-sys/include/definitions/tolerance.hpp");
 
-        fn epsilon() -> f64;
-        fn on_surface_tolerance() -> f64;
-        fn curvilinear_proj_tolerance() -> f64;
+        #[rust_name = "epsilon"]
+        fn s_epsilon() -> f64;
+
+        #[rust_name = "on_surface_tolerance"]
+        fn s_onSurfaceTolerance() -> f64;
+
+        #[rust_name = "curvilinear_proj_tolerance"]
+        fn s_curvilinearProjTolerance() -> f64;
     }
 }
 
