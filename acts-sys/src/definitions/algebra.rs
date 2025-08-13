@@ -21,7 +21,8 @@ mod ffi {
         type Transform3;
 
         #[namespace = "acts_sys::ffi"]
-        fn transform_equivalent_tolerance() -> f64;
+        #[rust_name = "transform_equivalent_tolerance"]
+        fn s_transformEquivalentTolerance() -> f64;
     }
 }
 
