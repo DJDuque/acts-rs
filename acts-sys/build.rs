@@ -15,11 +15,13 @@ fn main() {
         "src/definitions/particle_data.rs",
         "src/definitions/tolerance.rs",
         "src/definitions/track_parametrization.rs",
+        "src/definitions/units.rs",
     ];
     cxx_build::bridges(bridge_files)
         .include("./include")
         .include(dst.join("include"))
         .include(dst.join("include").join("eigen3"))
+        .std("c++20")
         .compile("acts-sys");
 
     println!("cargo:rustc-link-search=native={}/lib", dst.display());
