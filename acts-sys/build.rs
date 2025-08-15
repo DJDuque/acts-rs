@@ -16,6 +16,7 @@ fn main() {
         "src/definitions/tolerance.rs",
         "src/definitions/track_parametrization.rs",
         "src/definitions/units.rs",
+        "src/geometry/blueprint_node.rs",
     ];
     cxx_build::bridges(bridge_files)
         .include("./include")
