@@ -17,6 +17,7 @@ fn main() {
         "src/definitions/track_parametrization.rs",
         "src/definitions/units.rs",
         "src/geometry/blueprint_node.rs",
+        "src/geometry/container_blueprint_node.rs",
         "src/geometry/geometry_identifier_blueprint_node.rs",
         "src/geometry/volume_attachment_strategy.rs",
         "src/geometry/volume_resize_strategy.rs",
