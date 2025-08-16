@@ -13,4 +13,6 @@ mod ffi {
             child: SharedPtr<BlueprintNode>,
         ) -> Result<Pin<&mut BlueprintNode>>;
     }
+
+    impl UniquePtr<BlueprintNode> {}
 }
