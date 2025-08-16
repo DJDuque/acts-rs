@@ -18,6 +18,7 @@ fn main() {
         "src/definitions/units.rs",
         "src/geometry/blueprint_node.rs",
         "src/geometry/geometry_identifier_blueprint_node.rs",
+        "src/geometry/volume_attachment_strategy.rs",
     ];
     cxx_build::bridges(bridge_files)
         .include("./include")
