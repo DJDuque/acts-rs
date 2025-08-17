@@ -16,9 +16,18 @@ mod ffi {
         AxisMag,
     }
 
+    #[derive(Debug)]
+    #[repr(i32)]
+    enum AxisBoundaryType {
+        Open,
+        Bound,
+        Closed,
+    }
+
     unsafe extern "C++" {
         include!("Acts/Utilities/AxisDefinitions.hpp");
 
         type AxisDirection;
+        type AxisBoundaryType;
     }
 }
