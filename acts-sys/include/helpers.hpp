@@ -11,8 +11,8 @@ namespace ffi {
 // See https://github.com/dtolnay/cxx/issues/280 and check if the status around
 // constructors has changed.
 template <typename T, typename... Args>
-std::unique_ptr<T> make_unique(Args &&...args) {
-  return std::make_unique<T>(std::forward<Args>(args)...);
+std::unique_ptr<T> make_unique(Args... args) {
+  return std::make_unique<T>(args...);
 }
 
 template <typename Base, typename Derived>
