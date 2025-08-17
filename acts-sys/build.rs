@@ -18,6 +18,7 @@ fn main() {
         "src/definitions/units.rs",
         "src/geometry/blueprint_node.rs",
         "src/geometry/container_blueprint_node.rs",
+        "src/geometry/cylinder_volume_bounds.rs",
         "src/geometry/geometry_identifier_blueprint_node.rs",
         "src/geometry/volume_attachment_strategy.rs",
         "src/geometry/volume_resize_strategy.rs",
