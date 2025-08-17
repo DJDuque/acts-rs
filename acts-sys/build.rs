@@ -21,6 +21,7 @@ fn main() {
         "src/geometry/cuboid_volume_bounds.rs",
         "src/geometry/cylinder_volume_bounds.rs",
         "src/geometry/geometry_identifier_blueprint_node.rs",
+        "src/geometry/material_designator_blueprint_node.rs",
         "src/geometry/volume_attachment_strategy.rs",
         "src/geometry/volume_resize_strategy.rs",
         "src/utilities/axis_definitions.rs",
