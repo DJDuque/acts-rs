@@ -24,6 +24,7 @@ fn main() {
         "src/geometry/volume_attachment_strategy.rs",
         "src/geometry/volume_resize_strategy.rs",
         "src/utilities/axis_definitions.rs",
+        "src/utilities/proto_axis.rs",
     ];
     cxx_build::bridges(bridge_files)
         .include("./include")
