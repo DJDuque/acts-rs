@@ -11,11 +11,11 @@ mod ffi {
 
         #[namespace = "acts_sys::ffi"]
         #[cxx_name = "make_unique"]
-        fn new() -> UniquePtr<GeometryIdentifierBlueprintNode>;
+        fn new_geometry_identifier_blueprint_node() -> UniquePtr<GeometryIdentifierBlueprintNode>;
 
         #[namespace = "acts_sys::ffi"]
         #[cxx_name = "upcast"]
-        fn upcast_unique(
+        fn upcast_unique_geometry_identifier_blueprint_node(
             node: UniquePtr<GeometryIdentifierBlueprintNode>,
         ) -> UniquePtr<BlueprintNode>;
 
