@@ -15,10 +15,6 @@ mod ffi {
 
         #[namespace = "acts_sys::ffi"]
         #[cxx_name = "upcast"]
-        fn upcast_mut(node: Pin<&mut GeometryIdentifierBlueprintNode>) -> Pin<&mut BlueprintNode>;
-
-        #[namespace = "acts_sys::ffi"]
-        #[cxx_name = "upcast"]
         fn upcast_unique(
             node: UniquePtr<GeometryIdentifierBlueprintNode>,
         ) -> UniquePtr<BlueprintNode>;

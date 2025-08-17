@@ -57,11 +57,5 @@ mod ffi {
         fn upcast_unique_container_blueprint_node(
             node: UniquePtr<ContainerBlueprintNode>,
         ) -> UniquePtr<BlueprintNode>;
-
-        #[namespace = "acts_sys::ffi"]
-        #[cxx_name = "upcast"]
-        fn upcast_mut_container_blueprint_node(
-            node: Pin<&mut ContainerBlueprintNode>,
-        ) -> Pin<&mut BlueprintNode>;
     }
 }
