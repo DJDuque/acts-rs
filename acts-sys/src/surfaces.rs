@@ -4,6 +4,7 @@ pub mod diamond_bounds;
 pub mod disc_bounds;
 pub mod disc_trapezoid_bounds;
 pub mod ellipse_bounds;
+pub mod line_bounds;
 pub mod planar_bounds;
 pub mod radial_bounds;
 pub mod rectangle_bounds;
