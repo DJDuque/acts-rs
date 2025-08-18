@@ -39,10 +39,12 @@ fn main() {
         "src/utilities/axis_definitions.rs",
         "src/utilities/proto_axis.rs",
     ];
+    let cpp_files = vec!["src/definitions/algebra.cpp"];
     cxx_build::bridges(bridge_files)
         .include("./include")
         .include(dst.join("include"))
         .include(dst.join("include").join("eigen3"))
+        .files(cpp_files)
         .std("c++20")
         .compile("acts-sys");
 
