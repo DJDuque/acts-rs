@@ -1,3 +1,4 @@
+pub mod cylinder_bounds;
 pub mod diamond_bounds;
 pub mod disc_bounds;
 pub mod disc_trapezoid_bounds;

@@ -25,6 +25,7 @@ fn main() {
         "src/geometry/static_blueprint_node.rs",
         "src/geometry/volume_attachment_strategy.rs",
         "src/geometry/volume_resize_strategy.rs",
+        "src/surfaces/cylinder_bounds.rs",
         "src/surfaces/diamond_bounds.rs",
         "src/surfaces/disc_bounds.rs",
         "src/surfaces/disc_trapezoid_bounds.rs",
