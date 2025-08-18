@@ -29,6 +29,7 @@ fn main() {
         "src/surfaces/disc_bounds.rs",
         "src/surfaces/ellipse_bounds.rs",
         "src/surfaces/planar_bounds.rs",
+        "src/surfaces/radial_bounds.rs",
         "src/surfaces/rectangle_bounds.rs",
         "src/surfaces/trapezoid_bounds.rs",
         "src/utilities/axis_definitions.rs",
