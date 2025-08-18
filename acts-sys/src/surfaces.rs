@@ -6,6 +6,7 @@ pub mod disc_trapezoid_bounds;
 pub mod ellipse_bounds;
 pub mod line_bounds;
 pub mod planar_bounds;
+pub mod plane_surface;
 pub mod radial_bounds;
 pub mod rectangle_bounds;
 pub mod trapezoid_bounds;
