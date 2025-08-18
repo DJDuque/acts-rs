@@ -27,6 +27,7 @@ fn main() {
         "src/geometry/volume_resize_strategy.rs",
         "src/surfaces/diamond_bounds.rs",
         "src/surfaces/disc_bounds.rs",
+        "src/surfaces/disc_trapezoid_bounds.rs",
         "src/surfaces/ellipse_bounds.rs",
         "src/surfaces/planar_bounds.rs",
         "src/surfaces/radial_bounds.rs",
