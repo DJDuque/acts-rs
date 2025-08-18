@@ -26,6 +26,7 @@ fn main() {
         "src/geometry/volume_attachment_strategy.rs",
         "src/geometry/volume_resize_strategy.rs",
         "src/surfaces/planar_bounds.rs",
+        "src/surfaces/rectangle_bounds.rs",
         "src/utilities/axis_definitions.rs",
         "src/utilities/proto_axis.rs",
     ];
