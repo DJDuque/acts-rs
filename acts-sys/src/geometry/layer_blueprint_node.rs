@@ -18,12 +18,16 @@ unsafe impl ExternType for SharedSurface {
 #[cxx::bridge(namespace = "Acts::Experimental")]
 mod ffi {
     unsafe extern "C++" {
+        include!("Acts/Definitions/Algebra.hpp");
         include!("Acts/Geometry/LayerBlueprintNode.hpp");
         include!("acts-sys/include/geometry/layer_blueprint_node.hpp");
         include!("acts-sys/include/helpers.hpp");
 
         type LayerBlueprintNode;
         type StaticBlueprintNode = crate::geometry::static_blueprint_node::StaticBlueprintNode;
+
+        #[namespace = "Acts"]
+        type Transform3 = crate::definitions::algebra::Transform3;
 
         #[namespace = "acts_sys::ffi"]
         #[cxx_name = "make_unique"]
@@ -40,6 +44,12 @@ mod ffi {
             node: Pin<&mut LayerBlueprintNode>,
             surfaces: &CxxVector<SharedSurface>,
         );
+
+        #[rust_name = "set_transform"]
+        fn setTransform(
+            self: Pin<&mut LayerBlueprintNode>,
+            transform: &Transform3,
+        ) -> Pin<&mut LayerBlueprintNode>;
     }
 
     extern "C++" {
