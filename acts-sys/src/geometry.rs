@@ -1,4 +1,5 @@
 pub mod blueprint_node;
+pub mod blueprint_options;
 pub mod container_blueprint_node;
 pub mod cuboid_volume_bounds;
 pub mod cylinder_volume_bounds;

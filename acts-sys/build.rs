@@ -17,6 +17,7 @@ fn main() {
         "src/definitions/track_parametrization.rs",
         "src/definitions/units.rs",
         "src/geometry/blueprint_node.rs",
+        "src/geometry/blueprint_options.rs",
         "src/geometry/container_blueprint_node.rs",
         "src/geometry/cuboid_volume_bounds.rs",
         "src/geometry/cylinder_volume_bounds.rs",
