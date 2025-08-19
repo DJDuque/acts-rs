@@ -17,6 +17,15 @@ unsafe impl ExternType for SharedSurface {
 
 #[cxx::bridge(namespace = "Acts::Experimental")]
 mod ffi {
+    #[namespace = "acts_sys::ffi"]
+    #[derive(Debug)]
+    #[repr(i32)]
+    enum LayerBlueprintNodeLayerType {
+        Cylinder,
+        Disc,
+        Plane,
+    }
+
     unsafe extern "C++" {
         include!("Acts/Definitions/Algebra.hpp");
         include!("Acts/Geometry/LayerBlueprintNode.hpp");
@@ -25,6 +34,9 @@ mod ffi {
 
         type LayerBlueprintNode;
         type StaticBlueprintNode = crate::geometry::static_blueprint_node::StaticBlueprintNode;
+
+        #[namespace = "acts_sys::ffi"]
+        type LayerBlueprintNodeLayerType;
 
         #[namespace = "Acts"]
         type Transform3 = crate::definitions::algebra::Transform3;
