@@ -8,6 +8,7 @@ pub mod disc_surface;
 pub mod disc_trapezoid_bounds;
 pub mod ellipse_bounds;
 pub mod line_bounds;
+pub mod line_surface;
 pub mod planar_bounds;
 pub mod plane_surface;
 pub mod radial_bounds;
