@@ -3,6 +3,7 @@ pub mod container_blueprint_node;
 pub mod cuboid_volume_bounds;
 pub mod cylinder_volume_bounds;
 pub mod geometry_identifier_blueprint_node;
+pub mod layer_blueprint_node;
 pub mod material_designator_blueprint_node;
 pub mod static_blueprint_node;
 pub mod volume_attachment_strategy;
