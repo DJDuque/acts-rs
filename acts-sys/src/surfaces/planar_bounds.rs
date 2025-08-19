@@ -9,4 +9,5 @@ mod ffi {
     }
 
     impl UniquePtr<PlanarBounds> {}
+    impl SharedPtr<PlanarBounds> {}
 }

@@ -9,4 +9,5 @@ pub mod planar_bounds;
 pub mod plane_surface;
 pub mod radial_bounds;
 pub mod rectangle_bounds;
+pub mod surface;
 pub mod trapezoid_bounds;

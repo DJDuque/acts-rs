@@ -7,4 +7,6 @@ mod ffi {
 
         type PlaneSurface;
     }
+
+    impl SharedPtr<PlaneSurface> {}
 }
