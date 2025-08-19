@@ -4,9 +4,14 @@ pub use ffi::*;
 mod ffi {
     unsafe extern "C++" {
         include!("Acts/Surfaces/DiscSurface.hpp");
+        include!("Acts/Surfaces/RegularSurface.hpp");
+        include!("acts-sys/include/helpers.hpp");
 
         type DiscSurface;
-    }
+        type RegularSurface = crate::surfaces::regular_surface::RegularSurface;
 
-    impl SharedPtr<DiscSurface> {}
+        #[namespace = "acts_sys::ffi"]
+        #[cxx_name = "upcast"]
+        fn upcast_shared_disc_surface(node: SharedPtr<DiscSurface>) -> SharedPtr<RegularSurface>;
+    }
 }
