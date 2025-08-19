@@ -62,6 +62,12 @@ mod ffi {
             self: Pin<&mut LayerBlueprintNode>,
             transform: &Transform3,
         ) -> Pin<&mut LayerBlueprintNode>;
+
+        #[rust_name = "set_layer_type"]
+        fn setLayerType(
+            self: Pin<&mut LayerBlueprintNode>,
+            layer_type: LayerBlueprintNodeLayerType,
+        ) -> Pin<&mut LayerBlueprintNode>;
     }
 
     extern "C++" {
