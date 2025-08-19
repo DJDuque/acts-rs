@@ -68,6 +68,14 @@ mod ffi {
             self: Pin<&mut LayerBlueprintNode>,
             layer_type: LayerBlueprintNodeLayerType,
         ) -> Pin<&mut LayerBlueprintNode>;
+
+        #[rust_name = "set_use_center_of_gravity"]
+        fn setUseCenterOfGravity(
+            self: Pin<&mut LayerBlueprintNode>,
+            x: bool,
+            y: bool,
+            z: bool,
+        ) -> Pin<&mut LayerBlueprintNode>;
     }
 
     extern "C++" {
