@@ -2,6 +2,7 @@ pub mod blueprint_node;
 pub mod container_blueprint_node;
 pub mod cuboid_volume_bounds;
 pub mod cylinder_volume_bounds;
+pub mod extent;
 pub mod geometry_identifier_blueprint_node;
 pub mod layer_blueprint_node;
 pub mod material_designator_blueprint_node;

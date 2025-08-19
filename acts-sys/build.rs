@@ -20,6 +20,7 @@ fn main() {
         "src/geometry/container_blueprint_node.rs",
         "src/geometry/cuboid_volume_bounds.rs",
         "src/geometry/cylinder_volume_bounds.rs",
+        "src/geometry/extent.rs",
         "src/geometry/geometry_identifier_blueprint_node.rs",
         "src/geometry/layer_blueprint_node.rs",
         "src/geometry/material_designator_blueprint_node.rs",
