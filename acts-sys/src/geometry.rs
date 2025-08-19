@@ -1,3 +1,4 @@
+pub mod blueprint;
 pub mod blueprint_node;
 pub mod blueprint_options;
 pub mod container_blueprint_node;
