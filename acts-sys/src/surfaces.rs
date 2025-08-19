@@ -1,4 +1,5 @@
 pub mod cone_bounds;
+pub mod cone_surface;
 pub mod cylinder_bounds;
 pub mod cylinder_surface;
 pub mod diamond_bounds;

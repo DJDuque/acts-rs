@@ -26,6 +26,7 @@ fn main() {
         "src/geometry/volume_attachment_strategy.rs",
         "src/geometry/volume_resize_strategy.rs",
         "src/surfaces/cone_bounds.rs",
+        "src/surfaces/cone_surface.rs",
         "src/surfaces/cylinder_bounds.rs",
         "src/surfaces/cylinder_surface.rs",
         "src/surfaces/diamond_bounds.rs",
