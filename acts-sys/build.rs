@@ -29,6 +29,7 @@ fn main() {
         "src/surfaces/cylinder_bounds.rs",
         "src/surfaces/diamond_bounds.rs",
         "src/surfaces/disc_bounds.rs",
+        "src/surfaces/disc_surface.rs",
         "src/surfaces/disc_trapezoid_bounds.rs",
         "src/surfaces/ellipse_bounds.rs",
         "src/surfaces/line_bounds.rs",
