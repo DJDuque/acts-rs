@@ -20,5 +20,10 @@ inline std::unique_ptr<Base> upcast(std::unique_ptr<Derived> derived) {
   return std::unique_ptr<Base>(std::move(derived));
 }
 
+template <typename Base, typename Derived>
+inline std::shared_ptr<Base> upcast(std::shared_ptr<Derived> derived) {
+  return std::shared_ptr<Base>(std::move(derived));
+}
+
 } // namespace ffi
 } // namespace acts_sys

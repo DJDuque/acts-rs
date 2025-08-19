@@ -55,4 +55,6 @@ mod ffi {
             bounds: SharedPtr<PlanarBounds>,
         ) -> SharedPtr<PlaneSurface>;
     }
+
+    impl SharedPtr<Surface> {}
 }

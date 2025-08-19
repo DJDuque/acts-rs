@@ -38,6 +38,7 @@ fn main() {
         "src/surfaces/plane_surface.rs",
         "src/surfaces/radial_bounds.rs",
         "src/surfaces/rectangle_bounds.rs",
+        "src/surfaces/regular_surface.rs",
         "src/surfaces/surface.rs",
         "src/surfaces/trapezoid_bounds.rs",
         "src/utilities/axis_definitions.rs",
