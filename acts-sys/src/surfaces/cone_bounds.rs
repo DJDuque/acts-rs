@@ -18,4 +18,6 @@ mod ffi {
             average_phi: f64,
         ) -> UniquePtr<ConeBounds>;
     }
+
+    impl SharedPtr<ConeBounds> {}
 }

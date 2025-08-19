@@ -12,4 +12,6 @@ mod ffi {
         #[cxx_name = "make_unique"]
         fn new_line_bounds(radius: f64, half_z: f64) -> UniquePtr<LineBounds>;
     }
+
+    impl SharedPtr<LineBounds> {}
 }

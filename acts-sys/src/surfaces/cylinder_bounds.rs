@@ -19,4 +19,6 @@ mod ffi {
             bevel_pos_z: f64,
         ) -> UniquePtr<CylinderBounds>;
     }
+
+    impl SharedPtr<CylinderBounds> {}
 }

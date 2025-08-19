@@ -9,4 +9,5 @@ mod ffi {
     }
 
     impl UniquePtr<DiscBounds> {}
+    impl SharedPtr<DiscBounds> {}
 }
