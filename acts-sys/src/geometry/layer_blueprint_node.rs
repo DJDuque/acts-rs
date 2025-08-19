@@ -39,6 +39,8 @@ mod ffi {
         type LayerBlueprintNodeLayerType;
 
         #[namespace = "Acts"]
+        type ExtentEnvelope = crate::geometry::extent::ExtentEnvelope;
+        #[namespace = "Acts"]
         type Transform3 = crate::definitions::algebra::Transform3;
 
         #[namespace = "acts_sys::ffi"]
@@ -75,6 +77,12 @@ mod ffi {
             x: bool,
             y: bool,
             z: bool,
+        ) -> Pin<&mut LayerBlueprintNode>;
+
+        #[rust_name = "set_extent_envelope"]
+        fn setEnvelope(
+            self: Pin<&mut LayerBlueprintNode>,
+            envelope: &ExtentEnvelope,
         ) -> Pin<&mut LayerBlueprintNode>;
     }
 
