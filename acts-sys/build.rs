@@ -48,6 +48,7 @@ fn main() {
         "src/surfaces/surface.rs",
         "src/surfaces/trapezoid_bounds.rs",
         "src/utilities/axis_definitions.rs",
+        "src/utilities/logger.rs",
         "src/utilities/proto_axis.rs",
     ];
     let cpp_files = vec!["src/definitions/algebra.cpp"];
