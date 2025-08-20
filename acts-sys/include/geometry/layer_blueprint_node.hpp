@@ -7,7 +7,8 @@
 namespace acts_sys {
 namespace ffi {
 
-using LayerBlueprintNodeLayerType = Acts::Experimental::LayerBlueprintNode::LayerType;
+using LayerBlueprintNodeLayerType =
+    Acts::Experimental::LayerBlueprintNode::LayerType;
 using SharedSurface = std::shared_ptr<Acts::Surface>;
 
 // This is needed because we can't pass CxxVector by value through FFI bridge
