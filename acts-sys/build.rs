@@ -28,6 +28,7 @@ fn main() {
         "src/geometry/layer_blueprint_node.rs",
         "src/geometry/material_designator_blueprint_node.rs",
         "src/geometry/static_blueprint_node.rs",
+        "src/geometry/tracking_geometry.rs",
         "src/geometry/volume_attachment_strategy.rs",
         "src/geometry/volume_resize_strategy.rs",
         "src/surfaces/cone_bounds.rs",
