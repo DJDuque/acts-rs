@@ -8,6 +8,7 @@ mod ffi {
 
         type ExtentEnvelope;
 
+        #[allow(clippy::too_many_arguments)]
         #[namespace = "acts_sys::ffi"]
         fn new_extent_envelope(
             x: &[f64; 2],
