@@ -23,6 +23,16 @@ mod ffi {
         #[namespace = "acts_sys::ffi"]
         #[rust_name = "transform_equivalent_tolerance"]
         fn s_transformEquivalentTolerance() -> f64;
+
+        #[namespace = "acts_sys::ffi"]
+        fn make_transform3(
+            rotation_x: f64,
+            rotation_y: f64,
+            rotation_z: f64,
+            translation_x: f64,
+            translation_y: f64,
+            translation_z: f64,
+        ) -> UniquePtr<Transform3>;
     }
 }
 

@@ -5,8 +5,8 @@ edition = "2024"
 links = "ActsCore"
 
 [dependencies]
-cxx = "1.0.166"
+cxx = "1.0.168"
 
 [build-dependencies]
 cmake = "0.1.54"
-cxx-build = "1.0.166"
+cxx-build = "1.0.168"

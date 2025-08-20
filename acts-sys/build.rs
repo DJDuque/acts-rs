@@ -16,11 +16,47 @@ fn main() {
         "src/definitions/tolerance.rs",
         "src/definitions/track_parametrization.rs",
         "src/definitions/units.rs",
+        "src/geometry/blueprint.rs",
+        "src/geometry/blueprint_node.rs",
+        "src/geometry/blueprint_options.rs",
+        "src/geometry/container_blueprint_node.rs",
+        "src/geometry/cuboid_volume_bounds.rs",
+        "src/geometry/cylinder_volume_bounds.rs",
+        "src/geometry/extent.rs",
+        "src/geometry/geometry_context.rs",
+        "src/geometry/geometry_identifier_blueprint_node.rs",
+        "src/geometry/layer_blueprint_node.rs",
+        "src/geometry/material_designator_blueprint_node.rs",
+        "src/geometry/static_blueprint_node.rs",
+        "src/geometry/tracking_geometry.rs",
+        "src/geometry/volume_attachment_strategy.rs",
+        "src/geometry/volume_resize_strategy.rs",
+        "src/surfaces/cone_bounds.rs",
+        "src/surfaces/cone_surface.rs",
+        "src/surfaces/cylinder_bounds.rs",
+        "src/surfaces/cylinder_surface.rs",
+        "src/surfaces/diamond_bounds.rs",
+        "src/surfaces/disc_bounds.rs",
+        "src/surfaces/disc_surface.rs",
+        "src/surfaces/disc_trapezoid_bounds.rs",
+        "src/surfaces/ellipse_bounds.rs",
+        "src/surfaces/planar_bounds.rs",
+        "src/surfaces/plane_surface.rs",
+        "src/surfaces/radial_bounds.rs",
+        "src/surfaces/rectangle_bounds.rs",
+        "src/surfaces/regular_surface.rs",
+        "src/surfaces/surface.rs",
+        "src/surfaces/trapezoid_bounds.rs",
+        "src/utilities/axis_definitions.rs",
+        "src/utilities/logger.rs",
+        "src/utilities/proto_axis.rs",
     ];
+    let cpp_files = vec!["src/definitions/algebra.cpp"];
     cxx_build::bridges(bridge_files)
         .include("./include")
         .include(dst.join("include"))
         .include(dst.join("include").join("eigen3"))
+        .files(cpp_files)
         .std("c++20")
         .compile("acts-sys");
 
