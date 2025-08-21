@@ -11,6 +11,6 @@ mod ffi {
 
         #[namespace = "acts_sys::ffi"]
         #[cxx_name = "upcast"]
-        fn upcast_shared_regular_surface(node: SharedPtr<RegularSurface>) -> SharedPtr<Surface>;
+        fn upcast_shared_regular_surface(surface: SharedPtr<RegularSurface>) -> SharedPtr<Surface>;
     }
 }

@@ -22,6 +22,8 @@ mod ffi {
 
         #[namespace = "acts_sys::ffi"]
         #[cxx_name = "upcast"]
-        fn upcast_unique_ellipse_bounds(node: UniquePtr<EllipseBounds>) -> UniquePtr<PlanarBounds>;
+        fn upcast_unique_ellipse_bounds(
+            bounds: UniquePtr<EllipseBounds>,
+        ) -> UniquePtr<PlanarBounds>;
     }
 }

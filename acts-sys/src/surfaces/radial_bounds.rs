@@ -20,6 +20,6 @@ mod ffi {
 
         #[namespace = "acts_sys::ffi"]
         #[cxx_name = "upcast"]
-        fn upcast_unique_radial_bounds(node: UniquePtr<RadialBounds>) -> UniquePtr<DiscBounds>;
+        fn upcast_unique_radial_bounds(bounds: UniquePtr<RadialBounds>) -> UniquePtr<DiscBounds>;
     }
 }

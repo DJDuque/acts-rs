@@ -23,7 +23,7 @@ mod ffi {
         #[namespace = "acts_sys::ffi"]
         #[cxx_name = "upcast"]
         fn upcast_unique_disc_trapezoid_bounds(
-            node: UniquePtr<DiscTrapezoidBounds>,
+            bounds: UniquePtr<DiscTrapezoidBounds>,
         ) -> UniquePtr<DiscBounds>;
     }
 }
