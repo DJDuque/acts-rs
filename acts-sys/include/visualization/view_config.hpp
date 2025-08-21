@@ -19,7 +19,7 @@ new_view_config(bool visible, const std::array<int, 3> &rgb_color,
   cfg->surfaceThickness = surface_thickness;
   cfg->quarterSegments = quarter_segments;
   cfg->triangulate = triangulate;
-  cfg->outputName = std::filesystem::path(output_name);
+  cfg->outputName = output_name;
 
   return cfg;
 }
