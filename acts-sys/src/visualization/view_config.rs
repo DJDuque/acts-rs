@@ -8,6 +8,7 @@ mod ffi {
 
         type ViewConfig;
 
+        #[allow(clippy::too_many_arguments)]
         #[namespace = "acts_sys::ffi"]
         fn new_view_config(
             visible: bool,
