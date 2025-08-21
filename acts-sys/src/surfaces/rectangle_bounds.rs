@@ -16,7 +16,7 @@ mod ffi {
         #[namespace = "acts_sys::ffi"]
         #[cxx_name = "upcast"]
         fn upcast_unique_rectangle_bounds(
-            node: UniquePtr<RectangleBounds>,
+            bounds: UniquePtr<RectangleBounds>,
         ) -> UniquePtr<PlanarBounds>;
     }
 }

@@ -13,7 +13,7 @@ mod ffi {
         #[namespace = "acts_sys::ffi"]
         #[cxx_name = "upcast"]
         fn upcast_shared_cylinder_surface(
-            node: SharedPtr<CylinderSurface>,
+            cylinder: SharedPtr<CylinderSurface>,
         ) -> SharedPtr<RegularSurface>;
     }
 }

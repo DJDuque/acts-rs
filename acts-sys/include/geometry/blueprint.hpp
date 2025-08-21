@@ -16,11 +16,10 @@ new_blueprint_config(const Acts::ExtentEnvelope &envelope) {
   return cfg;
 }
 
-inline Acts::Experimental::Blueprint &
+inline void
 blueprint_add_child(Acts::Experimental::Blueprint &node,
                     std::shared_ptr<Acts::Experimental::BlueprintNode> child) {
-  return static_cast<Acts::Experimental::Blueprint &>(
-      node.addChild(std::move(child)));
+  node.addChild(std::move(child));
 }
 
 } // namespace ffi

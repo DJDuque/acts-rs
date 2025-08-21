@@ -21,6 +21,8 @@ mod ffi {
 
         #[namespace = "acts_sys::ffi"]
         #[cxx_name = "upcast"]
-        fn upcast_unique_diamond_bounds(node: UniquePtr<DiamondBounds>) -> UniquePtr<PlanarBounds>;
+        fn upcast_unique_diamond_bounds(
+            bounds: UniquePtr<DiamondBounds>,
+        ) -> UniquePtr<PlanarBounds>;
     }
 }

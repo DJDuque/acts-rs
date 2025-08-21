@@ -31,7 +31,7 @@ mod ffi {
         fn blueprint_add_child(
             node: Pin<&mut Blueprint>,
             child: SharedPtr<BlueprintNode>,
-        ) -> Result<Pin<&mut Blueprint>>;
+        ) -> Result<()>;
 
         #[namespace = "acts_sys::ffi"]
         fn new_blueprint_config(envelope: &ExtentEnvelope) -> UniquePtr<BlueprintConfig>;

@@ -50,6 +50,9 @@ fn main() {
         "src/utilities/axis_definitions.rs",
         "src/utilities/logger.rs",
         "src/utilities/proto_axis.rs",
+        "src/visualization/i_visualization3d.rs",
+        "src/visualization/obj_visualization3d.rs",
+        "src/visualization/view_config.rs",
     ];
     let cpp_files = vec!["src/definitions/algebra.cpp"];
     cxx_build::bridges(bridge_files)

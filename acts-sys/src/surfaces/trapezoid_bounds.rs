@@ -21,7 +21,7 @@ mod ffi {
         #[namespace = "acts_sys::ffi"]
         #[cxx_name = "upcast"]
         fn upcast_unique_trapezoid_bounds(
-            node: UniquePtr<TrapezoidBounds>,
+            bounds: UniquePtr<TrapezoidBounds>,
         ) -> UniquePtr<PlanarBounds>;
     }
 }
