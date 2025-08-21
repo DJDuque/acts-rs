@@ -92,4 +92,6 @@ mod ffi {
         #[namespace = "acts_sys::ffi"]
         type SharedSurface = crate::geometry::layer_blueprint_node::SharedSurface;
     }
+
+    impl CxxVector<SharedSurface> {}
 }
