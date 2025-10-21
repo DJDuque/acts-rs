@@ -8,14 +8,6 @@ fn main() {
 
     let bridge_files = vec![
         "src/definitions/algebra.rs",
-        "src/definitions/alignment.rs",
-        "src/definitions/common.rs",
-        "src/definitions/direction.rs",
-        "src/definitions/pdg_particle.rs",
-        "src/definitions/particle_data.rs",
-        "src/definitions/tolerance.rs",
-        "src/definitions/track_parametrization.rs",
-        "src/definitions/units.rs",
         "src/geometry/blueprint.rs",
         "src/geometry/blueprint_node.rs",
         "src/geometry/blueprint_options.rs",
